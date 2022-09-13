@@ -1,0 +1,11 @@
+<h1>myfitnesspal</h1>
+
+<a href ="/recipe/new">Add new recipe to your book</a>
+<section class="recipes">
+<% recipes.each do |recipe| %>
+<section class="recipe">
+<header>
+<img src="<%= recipe['image_url'] %>" alt="">
+<h1><%= recipe['name']%></h1>
+<p><%= recipe['description'] %></p>
+<% end %>
