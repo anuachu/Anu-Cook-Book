@@ -4,8 +4,9 @@
 <section class="recipes">
 <% recipes.each do |recipe| %>
 <section class="recipe">
-<header>
+
 <img src="<%= recipe['image_url'] %>" alt="">
-<h1><%= recipe['name']%></h1>
+<h1>Name:<%= recipe['name']%></h1>
 <p><%= recipe['description'] %></p>
 <% end %>
+</section>
