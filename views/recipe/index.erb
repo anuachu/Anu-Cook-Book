@@ -1,12 +1,36 @@
-<h1>myfitnesspal</h1>
+<h1>myfitnesspal&#8482;</h1> 
+
+
+<% if logged_in? %>
+<h2>Welcome to Fitness Pal <%= current_user['first_name'] %></h2>
+
+<section class="controls">
+    <form action="/sessions" method="POST">
+      <input type="hidden" name="_method" value="delete">
+      <button>Logout</button>
+    </form>
 
 <a href ="/recipe/new">Add new recipe to your book</a>
 <section class="recipes">
 <% recipes.each do |recipe| %>
 <section class="recipe">
 
-<img src="<%= recipe['image_url'] %>" alt="">
+<a href="/recipe/<%= recipe['id'] %>/edit ">Edit</a>
+
+<form action="/recipe/<%= recipe['id'] %>" method="POST">
+<input type="hidden" name="_method" value="delete">
+<button>DELETE</button>
+
+<a href="/images/new"><img src="<%= recipe['image_url'] %>" alt=""></a>
+
+
 <h1>Name:<%= recipe['name']%></h1>
 <p><%= recipe['description'] %></p>
+
 <% end %>
 </section>
+
+<% else %>
+    <a href="/users/new">Sign up</a>
+    <a href="/sessions/new">Login</a>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>Edit Recipe</h1>
+<form action="/recipe/<%= recipe['id'] %>" method="POST">
+
+<input type="hidden" name="_method" value="put">
+
+<label for="">Image URL:</label>
+<input type="text" name="image_url" value="<%=recipe['image_url']%>">
+
+<label for="">Name:</label>
+<input type="text" name="name" value="<%=recipe['name']%>">
+
+<label for="">Description</label>
+<input type="text" name="description" value="<%=recipe['description']%>">
+
+<button>Update Recipe</button>
+</form>

@@ -1,7 +1,14 @@
 require 'sinatra'
 require './db/db'
+require 'bcrypt'
 
-require './controllers/recipe_controller'
+enable :sessions
+
+require './controllers/recipe_controller.rb'
+require './controllers/users_controller.rb'
+require './controllers/sessions_controller.rb'
+require './helpers/sessions_helper'
+
 
 
 
