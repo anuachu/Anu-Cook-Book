@@ -1,37 +1,38 @@
 # myfitnessPal App
-This App is very useful in keeping track of you diet recipes
+This App is very useful in keeping track of your cooking recipes
 
 ## :computer: [Click here](https://obscure-ravine-20246.herokuapp.com/) to see my live project!
 
 ## :page_facing_up: About
 - How to use my awesome project.
-- Download instructions (if relevant):
-```zsh
+```
 $ git clone my-awesome-app
 $ cd my-awesome-app
-$ node app.js
+$ rerun main rb
 ```
-- Add in-app screenshots.
 
 ## :pencil2: Planning & Problem Solving
-- Talk about approach to the problem.
-- Add screenshots/drawings of doodles/plans during the planning phase.
-- Flow charts of app logic.
-![Wireframing](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+- Cooking App used to create recipe 
+- store recipe
+- Delete recipe
+- Edit Recipe
+- You can search each recipe
+![Wireframing]()
 
 ## :rocket: Cool tech
-- Programming languages
-- Libraries
-- Animations
-- Anything else you'd be proud to show your parents
+- HTML
+- CSS
+- RUBY 
+- POSTGRESQL
+- BULID THE APP USING SINATRA
 
 ## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
+- Adding more ingredients to the exicting recipe
+- <strike>Adding search bar</strike>
 
 ## :sob: Lessons learnt
 What I would do differently if I could wind back the clock...
+- Planning the project accordingly giving a extra time for stying my app 
 
 ## :white_check_mark: Future features
-Cool things I would add if I can keep working on this
+- Add Extra features like adding EXternal API's
