@@ -2,7 +2,7 @@ require './models/user'
 
 get '/users/new' do
     erb :'users/new'
-  end
+end
   
 post '/users' do
     first_name = params['first_name']

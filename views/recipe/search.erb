@@ -1,0 +1,15 @@
+<h1>Searched recipe</h1>
+<% recipes.each do |recipe| %>
+<div class="search">
+
+
+<h1>Name:<%= recipe['name']%></h1>
+<p><%= recipe['description'] %></p>
+<p><%= recipe['ingredient_name'] %></p>
+<p><%= recipe['qty'] %></p>
+<p><%= recipe['measurement'] %></p>
+<p><%= recipe['step1'] %></p>
+<p><%= recipe['step2'] %></p>
+
+<img src="<%= recipe['image_url'] %>" alt="">
+<% end %>

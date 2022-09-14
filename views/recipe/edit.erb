@@ -1,16 +1,40 @@
+<div class="add_recipe_page">
+<img class="loginlogo_main_page1" src="../images/logo.png" alt="">
+</div>
+
 <h1>Edit Recipe</h1>
-<form action="/recipe/<%= recipe['id'] %>" method="POST">
+<form action="/recipe/<%= recipe['id'] %>" method="POST" class="add_recipe_form">
 
 <input type="hidden" name="_method" value="put">
 
-<label for="">Image URL:</label>
-<input type="text" name="image_url" value="<%=recipe['image_url']%>">
+  <label for="">Recipe Name:</label>
+  <br>
+  <input type="text" name="name" value="<%= recipe['name'] %>">
+  <br>
 
-<label for="">Name:</label>
-<input type="text" name="name" value="<%=recipe['name']%>">
+  <h3>Ingredient</h3>
+ 
+  <label for="">Ingredient Name:</label>
+  <br>
+  <input type="text" name="ingredient_name" value="<%= recipe['ingredient_name'] %>" class="input_more_text">
+  <br>
 
-<label for="">Description</label>
-<input type="text" name="description" value="<%=recipe['description']%>">
+  <h3>Method</h3>
+  <label for="">Step 1</label>
+  <br>
+  <input type="text" name="step1" value="<%= recipe['step1'] %>" class="input_more_text">
+  <br>
 
-<button>Update Recipe</button>
+  <label for="">Step 2</label>
+  <br>
+  <input type="text" name="step2" value="<%= recipe['step2'] %>" class="input_more_text">
+  <br>
+
+  <label for="">Image URL:</label>
+  <br>
+  <input type="text" name="image_url" value="<%= recipe['image_url'] %>">
+  <br>
+
+
+<button class="button">Update Recipe</button>
 </form>

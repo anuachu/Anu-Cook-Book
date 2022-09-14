@@ -1,0 +1,45 @@
+<div class="add_recipe_page">
+<img class="loginlogo_main_page1" src="../images/logo.png" alt="">
+</div>
+
+<h1>All recipes</h1>
+
+<div class="main">
+<form action="/search_user"method="get">
+   <input type="text" name="name" class="input_search">
+   <button class="button_search">Search</button>
+</form>
+
+
+<section class="recipes">
+<% recipes.each do |recipe| %>
+<section class="recipe">
+<header>
+<h1><%= recipe['name']%></h1>
+<section class="controls">
+<a href="/recipe/<%= recipe['id'] %>/edit "class="button ">Edit</a>
+
+<form action="/recipe/<%= recipe['id'] %>" method="POST">
+<input type="hidden" name="_method" value="delete">
+<button class="button">DELETE</button>
+</form>
+</section>
+</header>
+
+
+<img src="<%= recipe['image_url'] %>" alt="">
+<h4>Ingredients</h4>
+<p><%= recipe['ingredient_name'] %></p>
+<h4>Method</h4>
+<p><%= recipe['step1'] %></p>
+<p><%= recipe['step2'] %></p>
+</section>
+
+<% end %>
+</section>
+</section>
+</div>
+
+
+
+

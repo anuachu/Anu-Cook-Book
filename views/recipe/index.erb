@@ -1,36 +1,50 @@
-<h1>myfitnesspal&#8482;</h1> 
-
-
 <% if logged_in? %>
-<h2>Welcome to Fitness Pal <%= current_user['first_name'] %></h2>
+<div class= "main_page">
+<img class="loginlogo_main_page" src="../images/logo.png" alt="">
+  <form action="/sessions" method="POST">
+     <button> <input type="hidden" name="_method" value="delete">
+      <img src="https://p.kindpng.com/picc/s/218-2184850_cancel-icon-svg-clip-arts-now-download-icon.png" class="logout" alt="">
+    </form></button>
+</div>
+<h2> HI <%= current_user['first_name'] %></h2>
 
 <section class="controls">
-    <form action="/sessions" method="POST">
-      <input type="hidden" name="_method" value="delete">
-      <button>Logout</button>
-    </form>
+  
+<div class="add_new_recipe_button">
+<a href ="/recipe/new" class="a">Add new recipe to your book</a>
+</div>
+<br>
+<div class="all_recipe_button">
+<a href="/recipe/all_recipes" class="a">All Recipes</a>
+</div>
 
-<a href ="/recipe/new">Add new recipe to your book</a>
-<section class="recipes">
-<% recipes.each do |recipe| %>
-<section class="recipe">
-
-<a href="/recipe/<%= recipe['id'] %>/edit ">Edit</a>
-
-<form action="/recipe/<%= recipe['id'] %>" method="POST">
-<input type="hidden" name="_method" value="delete">
-<button>DELETE</button>
-
-<a href="/images/new"><img src="<%= recipe['image_url'] %>" alt=""></a>
-
-
-<h1>Name:<%= recipe['name']%></h1>
-<p><%= recipe['description'] %></p>
-
-<% end %>
-</section>
 
 <% else %>
-    <a href="/users/new">Sign up</a>
-    <a href="/sessions/new">Login</a>
+<div class="loginbox">
+<div>
+<img class="loginlogo" src="../images/logo.png" alt="">
+<span class="logintext">Login or Signup to continue</span>
+
+  <form class = "login" action="/sessions" method="POST">
+  <label for="">Email </label>
+  <br>
+  <input type="text" name="email">
+  <br>
+
+  <label for="">Password </label>
+  <br>
+  <input type="password" name="password">
+  <br>
+  
+
+  <button class= "button">Log in</button>
+  <br>
+  <a href="/users/new">Sign up</a>
+  
+</form>
+
 <% end %>
+
+</div>
+</div>
+

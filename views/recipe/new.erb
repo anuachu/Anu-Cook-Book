@@ -1,18 +1,38 @@
+<div class="add_recipe_page">
+<img class="loginlogo_main_page1" src="../images/logo.png" alt="">
+</div>
 <h1>Add Recipe</h1>
-<form action="/recipes" method="POST">
+<form action="/recipes" method="POST" class="add_recipe_form">
 
-  <label for="">Image url</label>
-  <input type="text" name="image_url">
-
-   <label for="">Recipe Name:</label>
-  <input type="text" name="name">
-
-  <label for="">Description:</label>
-  <input type="text" name="description">
+  <label for="">Recipe Name:</label>
+  <br>
+  <input type="text" name="name" >
+  <br>
   
-  <button>Add recipe</button>
-</form>
 
-<form action="/recipe/add" method="POST">
-<button>Add Ingredients</button>
+  <h3>Ingredient</h3>
+  <label for="">Ingredient Name:</label>
+  <br>
+  <input type="text" name="ingredient_name" class="input_more_text">
+  <br>
+
+   <a href="/recipe/ingredients" method="POST">+ Add another ingredient</a>
+
+  <h3>Method</h3>
+  <label for="">Step 1</label>
+  <br>
+  <input type="text" name="step1" class="input_more_text">
+  <br>
+
+  <label for="">Step 2</label>
+  <br>
+  <input type="text" name="step2" class="input_more_text">
+  <br>
+
+  <label for="">Image URL</label>
+  <br>
+  <input type="text" name="image_url">
+  <br>
+ <br>
+  <button class="button">Add recipe</button>
 </form>
