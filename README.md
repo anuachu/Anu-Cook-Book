@@ -1,4 +1,4 @@
-# myfitnessPal App
+# ANU's COOK BOOK APP
 This App is very useful in keeping track of your cooking recipes
 
 ## :computer: [Click here](https://obscure-ravine-20246.herokuapp.com/) to see my live project!
@@ -17,7 +17,6 @@ $ rerun main rb
 - Delete recipe
 - Edit Recipe
 - You can search each recipe
-![Wireframing]()
 
 ## :rocket: Cool tech
 - HTML
