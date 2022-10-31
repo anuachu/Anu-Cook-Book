@@ -1,7 +1,7 @@
 # ANU's COOK BOOK APP
 This App is very useful in keeping track of your cooking recipes
 
-## :computer: [Click here](https://obscure-ravine-20246.herokuapp.com/) to see my live project!
+## :computer: [Click here](https://crud-app-2022.herokuapp.com/) to see my live project!
 
 ## :page_facing_up: About
 - How to use my awesome project.
